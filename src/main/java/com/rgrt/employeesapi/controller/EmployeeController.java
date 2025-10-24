@@ -18,7 +18,8 @@ import lombok.extern.slf4j.Slf4j;
 @RestController
 @RequestMapping("/api/employees")
 @CrossOrigin(origins = {
-		"https://ravitejagrt.github.io"		
+		"https://ravitejagrt.github.io",
+		"http://localhost:3000"
 })
 @Slf4j
 public class EmployeeController {

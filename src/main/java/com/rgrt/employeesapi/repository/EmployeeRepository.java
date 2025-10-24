@@ -8,5 +8,5 @@ import com.rgrt.employeesapi.entity.Employee;
 
 public interface EmployeeRepository extends JpaRepository<Employee, Long> {
 	
-	List<Employee> findByFirstName(String firstName);
+	List<Employee> findByFirstNameIgnoreCase(String firstName);
 }

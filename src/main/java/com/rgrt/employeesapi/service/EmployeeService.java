@@ -24,7 +24,7 @@ public class EmployeeService {
 	}
 	
 	public List<Employee> getEmployeesByFirstName(String firstName) {
-		return employeeRepository.findByFirstName(firstName);
+		return employeeRepository.findByFirstNameIgnoreCase(firstName);
 	}
 
 }
